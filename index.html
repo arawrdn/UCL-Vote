@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote UCL: Inter Milan vs Barcelona</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="warpcast-frame">
+        <header class="warpcast-header">
+            <h1>UCL Vote: Inter Milan vs Barcelona</h1>
+            <p>Cast your vote for the winner!</p>
+        </header>
+        
+        <section class="warpcast-content">
+            <div class="team">
+                <div class="team-logo">
+                    <img src="images/inter-milan-logo.png" alt="Inter Milan Logo">
+                </div>
+                <h2>Inter Milan</h2>
+                <button class="vote-button" onclick="vote('Inter Milan')">Vote</button>
+            </div>
+
+            <div class="vs">
+                <h3>VS</h3>
+            </div>
+
+            <div class="team">
+                <div class="team-logo">
+                    <img src="images/barcelona-logo.png" alt="Barcelona Logo">
+                </div>
+                <h2>Barcelona</h2>
+                <button class="vote-button" onclick="vote('Barcelona')">Vote</button>
+            </div>
+        </section>
+
+        <footer class="warpcast-footer">
+            <p>&copy; 2025 UCL Voting Platform</p>
+        </footer>
+    </div>
+
+    <script>
+        function vote(team) {
+            alert("You voted for " + team);
+        }
+    </script>
+</body>
+</html>
